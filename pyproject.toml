@@ -1,0 +1,27 @@
+[project]
+name = "mockmate"
+version = "1.0.0"
+description = "A terminal mock-interview agent: asks one question at a time, scores answers with a validated rubric, and tracks your weak topics."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = [
+    "langchain>=0.3",
+    "langchain-nvidia-ai-endpoints>=0.3",
+    "langgraph>=0.4",
+    "langgraph-checkpoint-sqlite>=2.0",
+    "pydantic>=2.7",
+    "python-dotenv>=1.0",
+    "streamlit>=1.67.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.uv]
+# MockMate is an application run via `uv run python main.py`, not an installable library.
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

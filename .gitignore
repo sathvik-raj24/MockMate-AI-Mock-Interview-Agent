@@ -1,0 +1,72 @@
+
+# ==============================
+# Environment variables & secrets
+# ==============================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.toml
+
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==============================
+# Virtual environments
+# ==============================
+.venv/
+venv/
+env/
+
+# ==============================
+# SQLite databases & checkpoints
+# ==============================
+*.sqlite
+*.sqlite3
+*.db
+.checkpoints.sqlite
+
+# ==============================
+# MockMate personal session data
+# ==============================
+workspace/sessions/*
+!workspace/sessions/.gitkeep
+workspace/weak-topics.md
+
+# ==============================
+# Streamlit
+# ==============================
+.streamlit/secrets.toml
+
+# ==============================
+# IDE & editor
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==============================
+# Operating system
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Logs & temporary files
+# ==============================
+*.log
+*.tmp
+*.bak
